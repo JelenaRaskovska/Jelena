@@ -1,9 +1,13 @@
 body {
     margin: 0;
-    background-color: rgb(255, 223, 223);
+    background-image: url("fullbg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
 }
 
 .nav {
+    font-family: "Bubblegum Sans";
     position: fixed;
 }
 
@@ -12,9 +16,10 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(255, 0, 0);
+    background-color: transparent;
     top: 0;
     width: 100vw;
+    height: 5vh;
 }
   
 .nav li a {
@@ -26,7 +31,7 @@ body {
 }
   
 .nav li a:hover {
-    background-color: rgb(212, 0, 0);
+    opacity: 0.5;
 }
 
 .nav-left li {
@@ -42,8 +47,7 @@ body {
     float: none;
     position: absolute;
     left: 50%;
-    transform: translate(-55%, -10%);
-    font-family: 'Sofia';
+    transform: translate(-50%, -10%);
     font-size: 22px;
 
     display: block;
@@ -53,14 +57,36 @@ body {
     text-decoration: none;
 }
 
-.content {
-    text-align: justify;
-    padding-top: 5%;
-    margin-left: 10vw;
-    margin-right: 10vw;
+.nav-centre li img {
+
+    max-width:100vw;
+    max-height:10vh;
+    padding-top: 8px;
+
 }
 
-.content p {
-    font-family: 'Akaya Kanadaka';
+.content {
+    text-align: center;
+    padding-top: 8%;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    font-family: 'Bubblegum Sans';
     font-size: 22px;
+    color: white;
+    text-shadow: 2px 3px 3px #00000052;
 }
+
+.submitForm {
+    text-align: center;
+    color: white;
+}
+
+.submitForm input[type=submit] {
+    background-color: #ea64ffb6;
+    color: white;
+    padding: 15px 20px;
+    margin: 8px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
