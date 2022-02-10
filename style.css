@@ -76,6 +76,10 @@ body {
     text-shadow: 2px 3px 3px #00000052;
 }
 
+.content table {
+    
+}
+
 .submitForm {
     text-align: center;
     color: white;
